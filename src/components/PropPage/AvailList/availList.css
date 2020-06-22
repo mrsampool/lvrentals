@@ -1,0 +1,41 @@
+
+.AvailList div, .AvailList p{
+    width: 100%;
+    border-radius: 0;
+}
+.availUnit{
+    background-color: hsla(120,60%,70%,0.8);
+    width: 100%;
+    padding: 0.5rem 0;
+    margin-top: 0.5rem;
+}
+.availDets{
+    display: inline-flex;
+    margin-top: 0.5rem;
+}
+
+.availDets div{
+    background-color: hsla(120,30%,40%,0.8);
+    border-radius: 1rem;
+    color: white;
+}
+.includes{
+    background-color: hsla(120,30%,40%,0.8);
+    border-radius: 1rem;
+    color: white;
+    padding: 0.5rem;
+    width: fit-content;
+    font-size: 0.8rem;
+    height: fit-content;
+}
+
+.listUnavail{
+    background-color: hsla(0,80%,80%);
+    padding: 0.5rem 0;
+}
+
+#resDets{
+    display: inline-flex;
+    padding: 0;
+    background-color: hsla(0,0%,100%,0)
+}

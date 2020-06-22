@@ -1,0 +1,15 @@
+.Current{
+    width: 100%;
+    padding: 0.5rem;
+}
+.Current p{
+    width: fit-content;
+    margin: auto;
+    padding: 0.5rem 1rem;
+
+    background-color: aliceblue;
+    border-radius: 1rem;
+    
+    text-align: center;
+    font-weight: 400;
+}

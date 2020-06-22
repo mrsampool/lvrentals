@@ -1,0 +1,29 @@
+body,html,#root{
+  height: fit-content;
+}
+
+
+h1,h2,h3,h4,h5,h6,p{
+  margin: 0;;
+}
+
+.App {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  height: fit-content;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+@media only screen and (max-width: 700px){
+  .App{
+      display: block;
+  }
+}
+
+@media only screen and (max-height: 600px){
+  .App{
+      display: block;
+  }
+}

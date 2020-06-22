@@ -1,0 +1,15 @@
+
+.PropOverview{
+    display: block;
+}
+
+.strong{
+    font-weight: 700;
+}
+
+.featNums,.propAddlNums{
+    display: inline-flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: fit-content;
+}

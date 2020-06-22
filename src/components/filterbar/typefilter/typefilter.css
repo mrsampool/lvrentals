@@ -1,0 +1,16 @@
+
+.type.filter{
+    display: block;
+    text-align: left;
+    margin: auto;
+    padding: 0 1rem;
+}
+
+.type.filterInput{
+    padding-bottom: 0.5rem;
+    width: fit-content;
+}
+
+.type.filter input{
+    width: fit-content;
+}

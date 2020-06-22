@@ -1,0 +1,101 @@
+/* CONTAINER */
+.ResultComm{
+    display: block;
+    width: 20rem;
+    height: fit-content;
+    text-align: left;
+    margin: 0.5rem;
+    background-color: aliceblue;
+    border: 5px solid white;
+    border-radius: 1rem;
+    box-shadow: 0px 5px 10px hsla(0,0%,0%,0.4);
+}
+.ResultComm:hover{
+    border: 5px solid cadetblue;
+    transition: all 0.25s;
+}
+
+/* THUMBNAIL */
+.thumb{
+    width: 100%;
+    margin: auto;
+}
+.thumb img{
+    border-radius: 0.5rem;
+    width: 100%;
+    margin: auto;
+}
+
+/* DETAILS CONTAINER */
+.resultDets{
+    height: fit-content;
+    width: fit-content;
+    text-align: center;
+}
+
+
+/* HEADER BAR */
+.header{
+    background-color: hsla(200,60%,80%,0.8);
+    border-radius: 0.5rem;
+    width: 90%;
+    padding: 0.5rem 1rem;
+}
+.name{
+    font-size: 1.2rem;
+    font-weight: 700;
+    line-height: 1.2em;
+    text-transform: uppercase;
+}
+.location{
+    line-height: 1em;
+    font-style: italic;
+}
+
+/* NUMBERS */
+.resultNumbers{
+    display: inline-flex;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+.bold{
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+.bedbath{
+    display: inline-flex;
+}
+
+/* AVAILABILITY */
+.units{
+    display: inline-flex;
+}
+.avail,.unavail,.newUnits{
+    width: fit-content;
+    font-weight: 700;
+    padding: 0.5rem 1rem;
+    margin: 0 .1rem;
+}
+
+.avail,.newUnits{
+    background-color: hsla(120,60%,70%,0.8);
+    border-radius: 1rem;
+}
+.unavail{
+    background-color: hsla(0,60%,70%,0.8);
+    border-radius: 1rem;
+}
+.italic{
+    font-style: italic;
+    font-weight: normal;
+}
+
+
+@media only screen and (max-width: 350px){
+    .ResultComm{
+        width: 95%;
+    }
+    
+}

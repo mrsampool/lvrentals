@@ -1,0 +1,161 @@
+/* CONTAINER STYLES */
+.PropPage{
+    position: fixed;
+    display: none;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    background-color: hsla(0,0%,0%,0.3);
+    z-index: 3;
+    overflow: scroll;
+}
+.propPageWindow{
+    display: block;
+    padding-top: 1rem;
+    justify-content: center;
+    height: fit-content;
+    width: fit-content;
+    margin: 1rem auto;
+
+    background-color: white;
+    border-radius: 1rem;
+
+    box-shadow: 0 0 4rem hsla(0,0%,0%,0.7);
+
+}
+.propPageBody{
+    display: inline-flex;
+    width: 100%;
+}
+
+/*CLOSE WINDOW BUTTON */
+.closeBar{
+    z-index: 5;
+    width: 100%;
+    display: inline-flex;
+    justify-content: flex-end;
+    margin-top: 1rem;
+    margin-right: 1rem;
+}
+.closePropPage{
+    position: absolute;
+    background-color: hsl(0,60%,80%);
+    color: white;
+    font-weight: 700;
+    font-size: 1rem;
+    border-radius: 0.5rem;
+    border: 0.1rem solid white;
+}
+.closePropPage:hover{
+    background-color: crimson;
+    color: white;
+    transition: all 0.5s;
+}
+
+/* PROPERTY DETAILS */
+.propPageDets{
+    height: 90%;
+    width: 100%;
+}
+
+/* TITLE BAR */
+.topBar{
+    width: 100%;
+    justify-content: space-between;
+    background-color:rgba(173, 214, 235, 0.8);
+    padding: 0.5rem 0 0.5rem 0;
+    text-align: center;
+}
+h1{
+    font-size: 1.5rem;
+}
+
+/* SCROLLING DETAILS */
+.propDetsScroll{
+    height: fit-content;
+    width: 100%;
+    margin: 0;
+}
+.Contact{
+    padding: 0.5rem 0;
+    margin-top: 0.5rem;
+    margin-bottom: 0.75rem;
+    background-color:rgba(173, 214, 235, 0.8);
+}
+
+@media only screen and (max-width: 700px){
+    .PropPage{
+        position: static;
+        background-color: hsla(0,0%,0%,0);
+    }
+    .propPageWindow{
+        margin-top: 1rem;
+        width: 90%;
+        position: static;
+        height: fit-content;
+        overflow: scroll;
+    }
+    .propPageBody{
+        display: block;
+    }
+    .propPageDets{
+        height: fit-content;
+        width: 100%;
+    }
+    .propDetsScroll{
+        height: fit-content;
+    }
+    .propPagePhoto{
+        height: fit-content;
+        width: 100%;
+        margin: auto;
+    }
+    .featuredImg{
+        width: 95%;
+        margin: auto;
+    }
+    .featuredImg img{
+        width: 95%;
+    }
+    .addlPhotos{
+
+    }
+}
+
+@media only screen and (max-height: 600px){
+    .PropPage{
+        position: static;
+        background-color: hsla(0,0%,0%,0);
+    }
+    .propPageWindow{
+        margin-top: 1rem;
+        width: 90%;
+        position: static;
+        height: fit-content;
+        overflow: scroll;
+    }
+    .propPageBody{
+        display: block;
+    }
+    .propPageDets{
+        height: fit-content;
+        width: 100%;
+    }
+    .propDetsScroll{
+        height: fit-content;
+    }
+    .propPagePhoto{
+        height: fit-content;
+        width: 100%;
+        margin: auto;
+    }
+    .featuredImg{
+        width: 95%;
+        margin: auto;
+    }
+    .featuredImg img{
+        width: 95%;
+    }
+    .addlPhotos{
+    }
+}

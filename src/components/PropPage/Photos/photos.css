@@ -1,0 +1,43 @@
+.Photos{
+    width: 500px;
+    height: 95%;
+    margin: auto;
+}
+.Photos img{
+    /*
+    border-top: 0.3rem solid white;
+    border-bottom: 0.3rem solid white;
+    */
+    transition: border 0.25s;
+}
+.Photos img:hover{
+    border-top: 0.3rem solid hsla(200,50%,50%,0.8);
+    border-bottom: 0.3rem solid hsla(200,50%,50%,0.8);
+}
+
+.featuredImg img{
+    width: 100%;
+}
+
+.addlPhotos{
+    display: inline-flex;
+    margin: 0.3rem;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 95%;
+    height: fit-content;
+}
+.addlPhotos img{
+    width: 8rem;
+    height: auto;
+    margin-top: 0.5rem;
+    border-radius: 0.5rem;
+}
+
+@media only screen and (max-width: 800px){
+    .Photos{
+        width: 95%;
+        margin: auto;
+    }
+}

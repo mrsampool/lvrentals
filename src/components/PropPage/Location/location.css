@@ -1,0 +1,22 @@
+
+.Location{
+    margin: 0.5rem;
+    background-color: rgba(173, 214, 235, 0.8);;
+    border-radius: 1rem;
+}
+.Location h2{
+    margin-bottom: 1rem;
+}
+.address{
+    padding: 0.5rem;
+}
+.address p{
+    line-height: 1.2rem;
+}
+iframe{
+    width: 95%;
+    height: 20rem;
+    border: none;
+    border-radius: 1rem;
+    margin-top: 0.5rem;
+}

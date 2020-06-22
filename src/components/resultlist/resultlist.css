@@ -1,0 +1,56 @@
+.ResultList{
+    height: fit-content;
+    margin: 180px 1.5rem 1.5rem 1.5rem;
+    width: fit-content;
+    padding: 1rem;
+
+    background-color: hsla(0,0%,100%,20%);
+    border-radius: 1rem;
+    box-shadow: 0rem 0rem 2rem hsla(200,40%,30%,0.5);
+
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.Current p{
+    font-weight: 100;
+}
+
+.others{
+    width: 100%;
+
+}
+.others p{
+    width: fit-content;
+    background-color: aliceblue;
+    padding: 0.5rem;
+    margin: 1.5rem auto;
+    border-radius: 1rem;
+}
+
+
+
+@media only screen and (max-width: 800px){
+    .ResultList{
+        margin-top: 250px;
+    }
+}
+
+@media only screen and (max-width: 700px){
+    .ResultList{
+        margin-top: 0;
+    }
+}
+@media only screen and (max-width: 400px){
+    .ResultList{
+        margin: auto;
+    }
+}
+
+@media only screen and (max-height: 600px){
+    .ResultList{
+        margin-top: 0;
+    }
+}

@@ -1,0 +1,16 @@
+.NumberBox{
+    background-color: hsla(0,0%,80%,0.5);
+    text-align: center;
+    border-radius: 0.5rem;
+    line-height: 1rem;
+    margin: 0.25rem;
+    padding: 0.5rem;
+    width: fit-content;
+}
+.number{
+    font-weight: 700;
+    font-size: 1rem;
+}
+.sub{
+    font-style: italic;
+}
