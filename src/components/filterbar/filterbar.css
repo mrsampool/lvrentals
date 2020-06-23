@@ -24,6 +24,7 @@
 
 .filterMenu{
     display: inline-flex;
+    height: fit-content;
 }
 
 .filterBody{
@@ -45,7 +46,7 @@
 /* FILTERS */
 .filtercontainer{
     background-color: hsla(200,67%,80%);
-    height: fit-content;
+    height: 100%;
     border-radius: 1rem;
     margin: auto 0.2rem;
     padding: 0.5rem;
@@ -95,6 +96,8 @@
 
 .sizeType{
     display: inline-flex;
+    height: 100%;
+    margin: auto;
 }
 
 .clearButton{
