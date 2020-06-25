@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "8b35fa77269a392fc73c7559e1e4a190",
+    "revision": "c3dfbe6b1374c880dd71736dba2df53c",
     "url": "/lvrentals/index.html"
   },
   {
-    "revision": "e871f8e0251284a1d0c0",
-    "url": "/lvrentals/static/css/main.cacd288b.chunk.css"
+    "revision": "1f7d4e66d23c302b4ca6",
+    "url": "/lvrentals/static/css/main.3c1a5c12.chunk.css"
   },
   {
     "revision": "6e53bde35632eb2cc63a",
@@ -16,16 +16,12 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/lvrentals/static/js/2.19280b4e.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "e871f8e0251284a1d0c0",
-    "url": "/lvrentals/static/js/main.8b2b4b6f.chunk.js"
+    "revision": "1f7d4e66d23c302b4ca6",
+    "url": "/lvrentals/static/js/main.9884fef5.chunk.js"
   },
   {
     "revision": "9aa07a0d67c5fcfc41f6",
     "url": "/lvrentals/static/js/runtime-main.3bb5e182.js"
-  },
-  {
-    "revision": "0870bb16c6d5119175b98d0b1fa514ac",
-    "url": "/lvrentals/static/media/L&V Logo.0870bb16.png"
   },
   {
     "revision": "24420df33029fe762be0b38382fc3496",
