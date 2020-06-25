@@ -31,7 +31,7 @@ class FilterBar extends React.Component{
                 <div className="menulogo">
                     <img 
                         id="logo"
-                        src={require('./L&V Logo.png')}/>
+                        src={require('./lvlogoH.png')}/>
                 </div>
 
                 <div className="filterBody">
