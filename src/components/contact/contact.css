@@ -1,0 +1,28 @@
+.contactInfo{
+    display: block;
+    width: fit-content;
+    margin: 0.5rem auto 1rem auto; 
+    background-color: hsla(200,67%,80%);
+    border-radius: 1rem;
+    padding: 0.5rem;
+}
+
+.phone{
+    display: inline-flex;
+    background-color: aliceblue;
+    align-items: center;
+    padding: 0.2rem;
+    border-radius: 1rem;
+    padding: 0.5rem;
+}
+
+.phoneIcon{
+    width: 25px;
+    margin-right: 0.5rem;
+}
+
+.phoneIcon img{
+    width: 100%;
+    height: auto;
+}
+

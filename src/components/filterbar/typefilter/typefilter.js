@@ -18,41 +18,42 @@ class TypeFilter extends React.Component{
         let res = this.props.res
         return(
             <div className="filtercontainer" id="typeFilter" >
-                <h3 class="filterName" >Type</h3>
+                    
+                    <h3 class="filterName" >Type</h3>
 
-                <div className="type filter">
+                    <div className="type filter">
 
-                    <div class="type filterInput">
-                        
-                        <input 
-                            id="residential" 
-                            name="residential" 
-                            type="checkbox" 
-                            onChange={this.toggleRes}
-                            checked={this.props.res}
-                        />
-                        
-                        <label htmlFor="residential"> Residential</label><br/>
+                        <div class="type filterInput">
+                            
+                            <input 
+                                id="residential" 
+                                name="residential" 
+                                type="checkbox" 
+                                onChange={this.toggleRes}
+                                checked={this.props.res}
+                            />
+                            
+                            <label htmlFor="residential"> Residential</label><br/>
+
+                        </div>
+
+                        <div className="type filterInput">
+                            
+                            <input 
+                                id="commercial" 
+                                name="commercial" 
+                                type="checkbox"
+                                onChange={this.toggleComm}
+                                checked={this.props.comm}
+                            />
+
+                            <label htmlFor="commercial"> Commercial</label><br/>
+
+                        </div>
 
                     </div>
-
-                    <div className="type filterInput">
-                        
-                        <input 
-                            id="commercial" 
-                            name="commercial" 
-                            type="checkbox"
-                            onChange={this.toggleComm}
-                            checked={this.props.comm}
-                        />
-
-                        <label htmlFor="commercial"> Commercial</label><br/>
-
-                    </div>
-
                 </div>
 
-            </div>
         )
     }
 }

@@ -1,6 +1,6 @@
 .ResultList{
     height: fit-content;
-    margin: 180px 1.5rem 1.5rem 1.5rem;
+    margin: 150px 1.5rem 1.5rem 1.5rem;
     width: fit-content;
     padding: 1rem;
 
@@ -27,6 +27,12 @@
     background-color: aliceblue;
     padding: 0.5rem;
     margin: 1.5rem auto;
+    border-radius: 1rem;
+}
+.none{
+    background-color: hsla(0,60%,70%);
+    color: white;
+    padding: 0.5rem;
     border-radius: 1rem;
 }
 

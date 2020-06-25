@@ -13,6 +13,15 @@ class FilterBar extends React.Component{
 
     clearFilters(){
         this.props.resetFilters();
+        let priceMin = document.getElementById('pricemin');
+        let priceMax = document.getElementById('pricemax');
+        let sizeMin = document.getElementById('sizemin');
+        let sizeMax = document.getElementById('sizemax');
+        priceMin.value = '';
+        priceMax.value = '';
+        sizeMin.value = '';
+        sizeMax.value = '';
+
     }
     
     render(){
@@ -50,12 +59,14 @@ class FilterBar extends React.Component{
 
                         </div>
 
-                        
-                        <button 
-                                id="reset"
-                                onClick={this.clearFilters}
-                                >Clear <br/>Filters
-                        </button>
+                        <div className="resetBox">
+                            <button 
+                                    id="reset"
+                                    onClick={this.clearFilters}
+                                    >Clear <br/>Filters
+                            </button>
+                        </div>
+
                     
 
                     </div>

@@ -8,6 +8,7 @@ import PropPage from '../PropPage/PropPage';
 import Contact from '../PropPage/Contact/Contact';
 import '../resultlist/current/current.css';
 import PropRanges from '../resultlist/result/PropRanges';
+import Footer from '../footer/footer';
 
 
 class App extends React.Component{
@@ -136,7 +137,6 @@ class App extends React.Component{
 
           filtered={this.state.filtered}
           />
-
           
       </div>
     );

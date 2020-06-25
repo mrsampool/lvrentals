@@ -4,6 +4,7 @@ import ResultComm from './result/comm/result-comm';
 import Properties from './properties';
 import Current from './current/current';
 import NumberBox from '../NumberBox/NumberBox';
+import Footer from '../footer/footer';
 
 
 class ResultList extends React.Component{
@@ -68,16 +69,22 @@ class ResultList extends React.Component{
         }
         return(
             <div className="ResultList">
-                <Current
-                    maxPrice={this.props.maxPrice}
-                    minPrice={this.props.minPrice}
-                    maxSize={this.props.maxSize}
-                    minSize={this.props.minSize}
-                    res={this.props.res}
-                    comm={this.props.comm} 
-                />
+                {
+                    !this.props.filtered ?
+                    <Current
+                        maxPrice={this.props.maxPrice}
+                        minPrice={this.props.minPrice}
+                        maxSize={this.props.maxSize}
+                        minSize={this.props.minSize}
+                        res={this.props.res}
+                        comm={this.props.comm} 
+                    />
+                    : ''
+                }
+
 
                 {
+                    results.length > 0 ?
                     results.map(property =>{
                     return <ResultComm
                                 className="Result"
@@ -98,6 +105,8 @@ class ResultList extends React.Component{
                                 baths={property.unitTypes[0].baths}
                             />
                     })
+                    :
+                    <p className="none">No available units matching search</p>
                 }
 
                 {
@@ -110,6 +119,7 @@ class ResultList extends React.Component{
                 }
 
                 {
+                    sortedOthers.length > 0 ?
                     sortedOthers.map(property =>{
                     return <ResultComm
                                 className="Result"
@@ -130,24 +140,11 @@ class ResultList extends React.Component{
                                 baths={property.unitTypes[0].baths}
                             />
                     })
+                    :
+                    <p className="none">No other relevant properties</p>
                 }
-                        
-                        
-                    {
-                    //Properties.residential.map(property =>{
-                    //    return <ResComm
-                      //              className="Result"
-                        //            key={property.name}
-                          //          name={property.name}
-                            //        price={property.priceRange() }
-                            //        size={property.sizeRange() }
-                             //       img={property.featImg}
-                             //       city={property.city}
-                             //       county={property.county}
-                             //       avail={property.unitsAvail}
-                             //       />
-                             //   })
-                    }
+
+                <Footer/>
                     
             </div>
             )

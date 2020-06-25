@@ -41,43 +41,47 @@ class PriceFilter extends React.Component{
     render(){
         return(
             <div className="filtercontainer" id="priceFilter" >
-                <h3 class="filterName" >Price<span className="description"> (Monthly)</span></h3>
 
-                <div className="filter">
-                    <div class="filterInput">
 
-                        <label htmlFor="pricemin"> Min</label><br/>
-                            <div className="inputrow">
+                    <h3 class="filterName" >Price<span className="description"> (Monthly)</span></h3>
+
+                    <div className="filter">
+                        <div class="filterInput">
+
+                            <label htmlFor="pricemin"> Min</label><br/>
+                                <div className="inputrow">
+                                    <span>$</span>
+                                    <input 
+                                        id="pricemin" 
+                                        name="pricein" 
+                                        type="text" 
+                                        onChange={this.handleMinPriceChange}
+                                        placeholder="any"
+                                    />
+                                </div>
+                        </div>
+
+                        <div className="filterInput">
+                            <label htmlFor="pricemax"> Max</label><br/>
+                            <div class="inputrow">
                                 <span>$</span>
                                 <input 
-                                    id="pricemin" 
-                                    name="pricein" 
-                                    type="text" 
-                                    onChange={this.handleMinPriceChange}
+                                    id="pricemax" 
+                                    name="pricemax" 
+                                    type="text"
+                                    onChange={this.handleMaxPriceChange}
                                     placeholder="any"
                                 />
                             </div>
+                        </div>
+
                     </div>
 
-                    <div className="filterInput">
-                        <label htmlFor="pricemax"> Max</label><br/>
-                        <div class="inputrow">
-                            <span>$</span>
-                            <input 
-                                id="pricemax" 
-                                name="pricemax" 
-                                type="text"
-                                onChange={this.handleMaxPriceChange}
-                                placeholder="any"
-                            />
-                        </div>
-                    </div>
+                    <p className="alert" id="pricealert">Invalid number</p>
 
                 </div>
 
-                <p className="alert" id="pricealert">Invalid number</p>
 
-            </div>
         )
     }
 }

@@ -5,9 +5,9 @@
     justify-content: center;
     width: 100%;
     height: 100%;
-    background-color: hsla(0,0%,0%,0.3);
     z-index: 3;
     overflow: scroll;
+    padding-bottom: 3.5rem;
 }
 .propPageWindow{
     display: block;
@@ -76,11 +76,8 @@ h1{
     width: 100%;
     margin: 0;
 }
-.Contact{
-    padding: 0.5rem 0;
-    margin-top: 0.5rem;
-    margin-bottom: 0.75rem;
-    background-color:rgba(173, 214, 235, 0.8);
+.propPageDets{
+    justify-content: center;
 }
 
 @media only screen and (max-width: 700px){

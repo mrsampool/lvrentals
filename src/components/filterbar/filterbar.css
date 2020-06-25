@@ -33,7 +33,7 @@
 
 /* LOGO */
 .menulogo{
-    height: 120px;
+    height: 90px;
     width: fit-content;
     margin: auto 0.7rem auto 0.2rem
 }
@@ -46,7 +46,8 @@
 /* FILTERS */
 .filtercontainer{
     background-color: hsla(200,67%,80%);
-    height: 100%;
+    height: 90px;
+    
     border-radius: 1rem;
     margin: auto 0.2rem;
     padding: 0.5rem;
@@ -55,18 +56,26 @@
     padding: 0.75rem;
     transition: all 0.2s;
 }
+.filterContents{
+    margin: auto;
+}
 .filter{
     display: inline-flex;
-    height: fit-content;
+    margin: auto;
 }
 
 .filterInput{
     height: fit-content;
+    
 }
 
 .filterName{
     margin-bottom: 0.5rem;
     font-weight: 700;
+    font-size: 1rem;
+    background-color: aliceblue;
+    border-radius: 1rem;
+    padding: 0.2rem;
 }
 .description{
     font-style: italic;
@@ -104,6 +113,9 @@
     width:100%;
 }
 
+.resetBox{
+    margin: auto;
+}
 #reset{
     height: fit-content;
     margin: auto 0 auto 0.5rem;
@@ -113,7 +125,7 @@
     font-size: 1rem;
     font-weight: 700;
     border: 0.2rem solid hsla(0,60%,70%);
-    color: black;
+    color: inherit;
 }
 #reset:hover{
     background-color: hsla(0,60%,70%);
@@ -125,6 +137,7 @@
 .alert{
     display: none;
     background-color: hsla(0,60%,70%);
+    color: white;
     padding: 0.5rem;
     border-radius: 1rem;
     font-weight: 700;
@@ -159,6 +172,9 @@
     .filter{
         display: block;
     }
+    .filtercontainer{
+        height: fit-content;
+    }
 }
 
 @media only screen and (max-width: 600px){
@@ -174,7 +190,7 @@
         margin-top: 1rem;
     }
     #reset{
-        margin-top: 1rem;
+        margin-top: 0.25rem;
     }
 }
 

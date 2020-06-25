@@ -4,7 +4,7 @@ import Properties from '../resultlist/properties';
 import AvailList from './AvailList/AvailList';
 import Location from './Location/Location';
 import PropOverview from './PropOverview/PropOverview';
-import Contact from './Contact/Contact';
+import Contact from '../contact/contact'
 import Photos from './Photos/Photos';
 import Lightbox from './Photos/LightBox/Lightbox';
 import './Photos/LightBox/Lightbox.css';
@@ -86,10 +86,7 @@ class PropPage extends React.Component{
 
                                 <PropOverview index={this.props.index} />
 
-                                <Contact
-                                    contactphone={this.props.contactphone}
-                                    contactemail={this.props.contactemail}
-                                />
+                                <Contact/>
 
                             </div>
 

@@ -1,0 +1,67 @@
+.footer{
+    display: inline-flex;
+    justify-content: center;
+    width: 100%;
+    margin: 1rem;
+    font-weight: 700;
+}
+
+.footerContent{
+    display: inline-flex;
+    align-items: center;
+    background-color: aliceblue;
+    width: fit-content;
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+.footerLogo{
+    width: 250px;
+}
+
+.footerLogo img{
+    width: 100%;
+    height: auto;
+}
+
+.address{
+    border-radius: 1rem;
+    margin-left: 1rem;
+    background-color: hsla(200,67%,80%);
+}
+.contactInfo{
+    display: inline-flex;
+    align-items: 1rem;
+}
+.phone{
+    margin-top: 0.5rem;
+}
+
+@media only screen and (max-width: 600px){
+    .footerContent{
+        display: block;
+    }
+    .address{
+        margin-top: 1rem;
+    }
+}
+
+@media only screen and (max-width: 400px){
+    .footerContent{
+        display: block;
+    }
+    .address{
+        margin-top: 1rem;
+    }
+    .footerLogo{
+        width: 100px;
+        margin: auto;
+    }
+    #footLogo{
+        content: url('./lvlogo.png');
+        width: 100%;;
+    }
+    .address{
+        margin-left: 0;
+    }
+}

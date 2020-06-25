@@ -9,6 +9,7 @@
     border: 5px solid white;
     border-radius: 1rem;
     box-shadow: 0px 5px 10px hsla(0,0%,0%,0.4);
+    color: inherit;
 }
 .ResultComm:hover{
     border: 5px solid cadetblue;

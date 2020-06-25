@@ -40,41 +40,43 @@ class SizeFilter extends React.Component{
     render(){
         return(
             <div className="filtercontainer" id="sizeFilter" >
-                <h3 class="filterName" >Size<span className="description"> (Sq Ft)</span></h3>
 
-                <div className="filter">
-                    <div className="filterInput">
-                        
-                        <label htmlFor="sizemin"> Min</label><br/>
-                        <div className="inputrow">
-                            <input 
-                                id="sizemin" 
-                                name="sizemin" 
-                                type="text" 
-                                onChange={this.handleMinSizeChange}
-                                placeholder="any"
-                            />
+                    <h3 class="filterName" >Size<span className="description"> (Sq Ft)</span></h3>
+
+                    <div className="filter">
+                        <div className="filterInput">
+                            
+                            <label htmlFor="sizemin"> Min</label><br/>
+                            <div className="inputrow">
+                                <input 
+                                    id="sizemin" 
+                                    name="sizemin" 
+                                    type="text" 
+                                    onChange={this.handleMinSizeChange}
+                                    placeholder="any"
+                                />
+                            </div>
                         </div>
+
+                        <div className="filterInput">
+                            <label htmlFor="sizemax"> Max</label><br/>
+                            <div class="inputrow">
+                                <input 
+                                    id="sizemax" 
+                                    name="sizemax" 
+                                    type="text" 
+                                    onChange={this.handleMaxSizeChange}
+                                    placeholder="any"
+                                />
+                            </div>
+                        </div>
+
                     </div>
 
-                    <div className="filterInput">
-                        <label htmlFor="sizemax"> Max</label><br/>
-                        <div class="inputrow">
-                            <input 
-                                id="sizemax" 
-                                name="sizemax" 
-                                type="text" 
-                                onChange={this.handleMaxSizeChange}
-                                placeholder="any"
-                            />
-                        </div>
-                    </div>
+                    <p className="alert" id="sizealert">Invalid number</p>
 
                 </div>
 
-                <p className="alert" id="sizealert">Invalid number</p>
-
-            </div>        
             )
     }
 }
