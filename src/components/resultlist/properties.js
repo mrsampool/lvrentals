@@ -191,10 +191,10 @@ const cleburneRd = new Commercial(
     'Crowley, TX 76036',
     'Tarrant County',
 
-    12,
-    4,
-    30000,
-    [true],
+    15,
+    5,
+    39100,
+    [false],
 
     "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d215197.11243301054!2d-97.55284574397673!3d32.567390768814285!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x864e6b67fdbda52b%3A0xf35f153aa79b3ac5!2s612%20W%20Cleburne%20Rd%2C%20Crowley%2C%20TX%2076036!5e0!3m2!1sen!2sus!4v1591138122773!5m2!1sen!2sus",
 
@@ -275,6 +275,14 @@ const cleburneRd = new Commercial(
             size: 1800,
             price: 1440,
             avail: false                   
+        },{
+            size: 3500,
+            price: 2800,
+            avail: [true,1]
+        },{
+            size: 2100,
+            price: 1680,
+            avail: [true,1]
         }
     ]
     )
@@ -394,7 +402,7 @@ const txBusPark = new Commercial(
     10,
     4,
     27600,
-    [true, 'August 15, 2020'],
+    [false],
 
     "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d51880.147847665176!2d-97.20010131673025!3d32.40548187355999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x864e594e3e69b7b9%3A0x60891f45673387ab!2s9115%20US-67%2C%20Alvarado%2C%20TX%2076009!5e0!3m2!1sen!2sus!4v1591456056565!5m2!1sen!2sus",
 
@@ -632,7 +640,7 @@ const us67hillTop = new Commercial(
         },{
             size: 3600,
             price: 2160,
-            avail: [true, 1]
+            avail: [false]
         },{
             size: 1500,
             price: 900,
@@ -708,7 +716,7 @@ const i35burleson = new Commercial(
         },{
             size: 1250,
             price: 750,
-            avail: [true,1]
+            avail: [false]
         },{
             size: 1000,
             price: 600,
@@ -780,7 +788,7 @@ const i35valley = new Commercial(
         },{
             size: 1250,
             price: 750,
-            avail: [true,1]
+            avail: [false]
         }
     ]
     )
@@ -877,7 +885,7 @@ const hometownVill = new Residential(
             price: 1175,
             beds: 2,
             baths: 2,
-            avail: [true,1]
+            avail: [false]
         }
     ]
     )
@@ -965,7 +973,7 @@ const ranchEstates = new Residential(
             price: 1225,
             beds: 2,
             baths: 2,
-            avail: [true,2]         
+            avail: [false]         
         }
     ]
     )
