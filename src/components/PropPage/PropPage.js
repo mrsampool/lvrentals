@@ -79,8 +79,6 @@ class PropPage extends React.Component{
                             </div>
 
                             <div className="propDetsScroll">
-
-                                <AvailList index={this.props.index} />
                                 
                                 <Location index={this.props.index} />
 

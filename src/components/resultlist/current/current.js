@@ -38,37 +38,34 @@ class Current extends React.Component{
                 return 'Please select a property type above.'
             }
 
-
-            
-
         //All properties within price range
         } else if(allPrices){
             if(atMinSize){
-                return `Available ${type} units under ${this.props.maxSize} Sq Ft:`
+                return ` ${type} units under ${this.props.maxSize} Sq Ft:`
             } else if(atMaxSize){
-                return `Available ${type} units over ${this.props.minSize} Sq Ft:`
-            } return `Available ${type} units between ${this.props.minSize}-${this.props.maxSize} sq ft:`
+                return ` ${type} units over ${this.props.minSize} Sq Ft:`
+            } return ` ${type} units between ${this.props.minSize}-${this.props.maxSize} sq ft:`
 
             
 
         //All properties within size range
         } else if(allSizes){
             if (atMinPrice){
-                return `Available ${type} units under $${this.props.maxPrice} monthly:`
+                return ` ${type} units under $${this.props.maxPrice} monthly:`
             } else if (atMaxPrice){
-                return `Available ${type} units over $${this.props.minPrice} monthly:`
+                return ` ${type} units over $${this.props.minPrice} monthly:`
             } else {
-                return `Available ${type} units between $${this.props.minPrice}-${this.props.maxPrice} monthly:`
+                return ` ${type} units between $${this.props.minPrice}-${this.props.maxPrice} monthly:`
             }
 
         } else if (atMaxPrice && atMaxSize){
-            return `Available ${type} units over $${this.props.minPrice} monthly & over ${this.props.minSize} Sq Ft:`
+            return ` ${type} units over $${this.props.minPrice} monthly & over ${this.props.minSize} Sq Ft:`
         }
 
 
         
         else {
-            return `Available ${type} units between $${this.props.minPrice}-${this.props.maxPrice} monthly and ${this.props.minSize}-${this.props.maxSize} sq ft:`
+            return ` ${type} units between $${this.props.minPrice}-${this.props.maxPrice} monthly and ${this.props.minSize}-${this.props.maxSize} sq ft:`
         }
     }
     render(){

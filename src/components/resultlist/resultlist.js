@@ -31,42 +31,7 @@ class ResultList extends React.Component{
                 return property.type !== 'commercial'
             })
         }
-        
-        //Separate By Availability / Coming Units
-        let results = []
-        let otherResults = [ [], [], [] ];
-        filtered.forEach( property =>{
 
-            if ( property.numAvail() > 0){
-                if ( property.availUnitList().some( unit =>{
-                    return this.props.maxPrice >= unit.price
-                    && this.props.minPrice <= unit.price
-                    && this.props.minSize <= unit.size
-                    && this.props.maxSize >= unit.size
-                }) ){
-                    results.push( property );
-                } else {
-                    otherResults[0].push( property )
-                }
-                
-
-            } else if (property.newUnits[0]){
-                otherResults[1].push( property );
-
-            } else {
-                otherResults[2].push( property );
-            }
-        })
-
-        //Join sorted catergories into one array
-        let sortedOthers = [];
-        for (let i = 0; i < otherResults.length; i++){
-            if(otherResults[i]){
-                otherResults[i].forEach( property =>{
-                    sortedOthers.push( property )
-                })
-            }
-        }
         return(
             <div className="ResultList">
                 {
@@ -84,8 +49,8 @@ class ResultList extends React.Component{
 
 
                 {
-                    results.length > 0 ?
-                    results.map(property =>{
+                    filtered.length > 0 ?
+                    filtered.map(property =>{
                     return <ResultComm
                                 className="Result"
                                 key={property.name}
@@ -106,42 +71,7 @@ class ResultList extends React.Component{
                             />
                     })
                     :
-                    <p className="none">No available units matching search</p>
-                }
-
-                {
-                    this.props.filtered ?
-                        <div className="others">
-                            <p>Other Results</p>
-                        </div>
-                        :
-                        ''
-                }
-
-                {
-                    sortedOthers.length > 0 ?
-                    sortedOthers.map(property =>{
-                    return <ResultComm
-                                className="Result"
-                                key={property.name}
-                                id={property.name}
-                                name={property.name}
-                                price={property.priceRange() }
-                                size={property.sizeRange() }
-                                img={property.featImg}
-                                location={property.location}
-                                numAvail={property.numAvail() }
-                                newUnits={property.newUnits[0]}
-                                newUnitsDate={property.newUnits[1]}
-                                type={property.type}
-                                index={property.priority}
-                                setPropIndex={this.props.setPropIndex}
-                                beds={property.unitTypes[0].beds}
-                                baths={property.unitTypes[0].baths}
-                            />
-                    })
-                    :
-                    <p className="none">No other relevant properties</p>
+                    <p className="none">No units matching search</p>
                 }
 
                 <Footer/>

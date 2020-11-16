@@ -97,9 +97,7 @@ class Building{
     }
     //LIST OF AVAILABLE UNITS
     availUnitList(){
-        return this.unitTypes.filter(unitType=>{
-            return unitType.avail[0] === true;
-        })
+        return this.unitTypes;
     }
 }
 

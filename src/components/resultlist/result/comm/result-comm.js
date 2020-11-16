@@ -68,31 +68,6 @@ class ResultComm extends React.Component{
 
                     </div>
 
-
-
-                    <div class="units">
-                        {
-                            this.props.numAvail > 0 ?
-                            <p className="avail">{this.props.numAvail} Unit{
-                                this.props.numAvail > 1 ? 's' : ''
-                            } Available!
-                            </p> 
-                            : <p className="unavail">No Units Available</p>
-                        }
-
-                        {
-                            this.props.newUnits ? 
-                            <p className="newUnits">
-                                New Units Coming Soon!
-                                {
-                                    this.props.newUnitsDate ? 
-                                    <p class="italic">{this.props.newUnitsDate}</p>
-                                    : ''
-                                }
-                            </p>
-                            : ''
-                        }
-                    </div>
                 </div>
 
             </button>
