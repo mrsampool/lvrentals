@@ -189,9 +189,9 @@ const cleburneRd = new Commercial(
     'Crowley, TX 76036',
     'Tarrant County',
 
-    15,
-    5,
-    39100,
+    18,
+    6,
+    46800,
     [false],
 
     "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d215197.11243301054!2d-97.55284574397673!3d32.567390768814285!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x864e6b67fdbda52b%3A0xf35f153aa79b3ac5!2s612%20W%20Cleburne%20Rd%2C%20Crowley%2C%20TX%2076036!5e0!3m2!1sen!2sus!4v1591138122773!5m2!1sen!2sus",
@@ -397,9 +397,9 @@ const txBusPark = new Commercial(
     'Alvarado, TX 76009',
     'Johnson County',
 
-    10,
-    4,
-    27600,
+    12,
+    5,
+    34600,
     [false],
 
     "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d51880.147847665176!2d-97.20010131673025!3d32.40548187355999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x864e594e3e69b7b9%3A0x60891f45673387ab!2s9115%20US-67%2C%20Alvarado%2C%20TX%2076009!5e0!3m2!1sen!2sus!4v1591456056565!5m2!1sen!2sus",

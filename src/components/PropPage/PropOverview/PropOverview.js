@@ -14,11 +14,6 @@ class PropOverview extends React.Component{
                 <div className="featNums">
 
                     <NumberBox
-                        number={Properties[this.props.index].priceRange()}
-                        sub="Monthly"
-                    />
-
-                    <NumberBox
                         number={Properties[this.props.index].sizeRange()}
                         sub="Sq Ft Units"
                     />

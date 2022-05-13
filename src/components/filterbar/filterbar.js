@@ -46,11 +46,6 @@ class FilterBar extends React.Component{
 
                         <div className="sizeType">               
 
-                            <PriceFilter
-                                maxPrice={this.props.maxPrice} 
-                                minPrice={this.props.minPrice}
-                                onFilterChange={this.props.onFilterChange} 
-                            />
                             <SizeFilter 
                                 maxSize={this.props.maxSize} 
                                 minSize={this.props.minSize}

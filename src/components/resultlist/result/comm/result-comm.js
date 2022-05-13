@@ -37,11 +37,6 @@ class ResultComm extends React.Component{
                     <div className="resultNumbers">
 
                         <NumberBox
-                            number={this.props.price}
-                            sub="monthly" 
-                        />
-
-                        <NumberBox
                             number={this.props.size}
                             sub="sq ft units" 
                         />
